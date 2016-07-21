@@ -12,6 +12,8 @@ rm ~/.appcfg_oauth2_tokens_java
 
 php -S localhost:8080 # (-t)
 
+# Beedrill: http://pldh.net/dex/sprites/beedrill
+
 
 # FF6 sprites:
 # http://www.spriters-resource.com/snes/ff6/
