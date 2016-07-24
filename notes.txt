@@ -15,6 +15,9 @@ php -S localhost:8080 # (-t)
 # Beedrill: http://pldh.net/dex/sprites/beedrill
 
 
+convert combee_back.gif  -background none -gravity NorthWest -extent 96x48 +append combee_back_sheet.gif
+
+
 # FF6 sprites:
 # http://www.spriters-resource.com/snes/ff6/
 # http://www.fantasyanime.com/finalfantasy/ff6/ff6maps.htm
