@@ -10,9 +10,10 @@ ig.module(
 
 MyGame = ig.Game.extend({
 	
-	font: new ig.Font( 'media/04b03.font.png' ),
+	font: new ig.Font( 'media/Helv32.png' ),
 	
 	init: function() {
+		ig.input.bind( ig.KEY.MOUSE1, 'mouse1' );
 		this.loadLevel( LevelChocobohouse );
 	},
 	
@@ -20,7 +21,8 @@ MyGame = ig.Game.extend({
 		this.parent();
 		var combee = this.getEntitiesByType( EntityCombee )[0];
 		if (combee) {
-			
+			this.screen.x = combee.pos.x - ig.system.width/2 + 48;
+			this.screen.y = combee.pos.y - ig.system.height/2 + 24;
 		}
 	},
 	
@@ -30,12 +32,10 @@ MyGame = ig.Game.extend({
 		var x = ig.system.width/2,
 			y = ig.system.height/2;
 		
-		this.font.draw( 'It Works! ' + ' ' + scale, x, y, ig.Font.ALIGN.CENTER );
+		this.font.draw( 'It Works!', x, y, ig.Font.ALIGN.CENTER );
 	}
 });
 
-var scale = 2; // ig.ua.pixelRatio * 2;
-
-ig.main( '#canvas', MyGame, 40, ig.ua.viewport.width / scale, ig.ua.viewport.height / scale, scale);
+ig.main( '#canvas', MyGame, 40, ig.ua.viewport.width, ig.ua.viewport.height);
 
 });
