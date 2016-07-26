@@ -1,5 +1,5 @@
 ig.module( 'game.levels.chocobohouse' )
-.requires( 'impact.image','game.entities.extra','game.entities.combee' )
+.requires( 'impact.image','game.entities.extra','game.entities.combee','game.entities.beedrill' )
 .defines(function(){
 LevelChocobohouse=/*JSON[*/{
 	"entities": [
@@ -12,11 +12,6 @@ LevelChocobohouse=/*JSON[*/{
 			"type": "EntityExtra",
 			"x": 1364,
 			"y": 1708
-		},
-		{
-			"type": "EntityExtra",
-			"x": 1824,
-			"y": 1308
 		},
 		{
 			"type": "EntityExtra",
@@ -82,6 +77,46 @@ LevelChocobohouse=/*JSON[*/{
 			"type": "EntityExtra",
 			"x": 2072,
 			"y": 1064
+		},
+		{
+			"type": "EntityBeedrill",
+			"x": 1920,
+			"y": 1224
+		},
+		{
+			"type": "EntityBeedrill",
+			"x": 1900,
+			"y": 1324
+		},
+		{
+			"type": "EntityBeedrill",
+			"x": 1924,
+			"y": 1424
+		},
+		{
+			"type": "EntityBeedrill",
+			"x": 2024,
+			"y": 1452
+		},
+		{
+			"type": "EntityBeedrill",
+			"x": 2128,
+			"y": 1432
+		},
+		{
+			"type": "EntityBeedrill",
+			"x": 2120,
+			"y": 1236
+		},
+		{
+			"type": "EntityBeedrill",
+			"x": 2028,
+			"y": 1176
+		},
+		{
+			"type": "EntityBeedrill",
+			"x": 2144,
+			"y": 1328
 		}
 	],
 	"layer": [
@@ -305,7 +340,7 @@ LevelChocobohouse=/*JSON[*/{
 			"width": 200,
 			"height": 200,
 			"linkWithCollision": false,
-			"visible": true,
+			"visible": 1,
 			"tilesetName": "media/Beecon.png",
 			"repeat": false,
 			"preRender": false,
