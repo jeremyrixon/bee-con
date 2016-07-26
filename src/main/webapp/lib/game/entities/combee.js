@@ -21,8 +21,8 @@ ig.module(
 				this.dest.x = (ig.input.mouse.x + ig.game.screen.x); //Figures out the x coord of the mouse in the entire world
 				this.dest.y = (ig.input.mouse.y + ig.game.screen.y); //Figures out the y coord of the mouse in the entire world
 			}
-			var dx = this.dest.x - this.pos.x;
-			var dy = this.dest.y - this.pos.y;
+			var dx = this.dest.x - this.pos.x - this.size.x / 2;
+			var dy = this.dest.y - this.pos.y - this.size.y / 2;
 			var r = Math.atan2(dy, dx); //Gives angle in radians from the entity's location to the dest location.
 			var speed = (dx * dx + dy *dy) / 20;
 			this.vel.x = Math.cos(r) * speed;

@@ -30,9 +30,9 @@ MyGame = ig.Game.extend({
 		this.parent();
 		// Add your own drawing code here
 		var x = ig.system.width/2,
-			y = ig.system.height/2;
+			y = 0;
 		
-		this.font.draw( 'It Works!', x, y, ig.Font.ALIGN.CENTER );
+		this.font.draw( 'Welcome to Bee Con!', x, y, ig.Font.ALIGN.CENTER );
 	}
 });
 
