@@ -14,6 +14,10 @@ MyGame = ig.Game.extend({
 	
 	init: function() {
 		ig.input.bind( ig.KEY.MOUSE1, 'mouse1' );
+		ig.input.bind( ig.KEY.LEFT_ARROW, 'left' );
+		ig.input.bind( ig.KEY.RIGHT_ARROW, 'right' );
+		ig.input.bind( ig.KEY.UP_ARROW, 'up' );
+		ig.input.bind( ig.KEY.DOWN_ARROW, 'down' );
 		this.loadLevel( LevelChocobohouse );
 	},
 	
